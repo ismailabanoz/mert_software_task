@@ -51,15 +51,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAddressOfEmployeeService.cs" />
+    <Compile Include="Abstract\IAddressOfSupplierService.cs" />
+    <Compile Include="Abstract\ICategoryService.cs" />
+    <Compile Include="Abstract\ICustomerService.cs" />
+    <Compile Include="Abstract\IDetailOfOrderService.cs" />
+    <Compile Include="Abstract\IEmployeeService.cs" />
+    <Compile Include="Abstract\IOrderService.cs" />
+    <Compile Include="Abstract\IProductService.cs" />
+    <Compile Include="Abstract\IShipAddressOfOrderService.cs" />
+    <Compile Include="Abstract\IShipperService.cs" />
+    <Compile Include="Abstract\ISupplierService.cs" />
+    <Compile Include="Abstract\ITerritoryIdOfEmployeeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Abstract\" />
     <Folder Include="Concrete\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mert_software_task.Entities\mert_software_task.Entities.csproj">
+      <Project>{078CBDE0-847B-458B-BD06-6485480435F9}</Project>
+      <Name>mert_software_task.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
