@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace mert_software_task.Entities.Concrete
 {
-    public class TerritoryIdOfEmploye : IEntity
+    public class TerritoryIdOfEmployee : IEntity
     {
         public int Id { get; set; }
         public int EmployeId { get; set; }
