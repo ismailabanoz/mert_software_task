@@ -65,7 +65,18 @@
     <Compile Include="Abstract\ISupplier.cs" />
     <Compile Include="Abstract\ITerritoryIdOfEmployee.cs" />
     <Compile Include="Concrete\EntityFramework\EfAddressOfEmployeeDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfAddressOfSupplierDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfCategoryDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfCustomerDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfDetailOfOrderDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfEmployeeDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfEntityRepositoryBase.cs" />
+    <Compile Include="Concrete\EntityFramework\EfOrderDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfProductDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfShipAddressOfOrderDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfShipperDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfSupplierDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfTerritoryIdOfEmployeeDal.cs" />
     <Compile Include="Concrete\EntityFramework\mert_software_taskContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
