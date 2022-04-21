@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace mert_software_task.DataAccess.Abstract
 {
-    public interface IAddressOfSupplier :IEntityRepository<AddressOfSupplier>
+    public interface IAddressOfSupplierDal :IEntityRepository<AddressOfSupplier>
     {
     }
 }

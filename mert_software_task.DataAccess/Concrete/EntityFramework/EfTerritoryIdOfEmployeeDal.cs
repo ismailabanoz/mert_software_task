@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace mert_software_task.DataAccess.Concrete.EntityFramework
 {
-    public class EfTerritoryIdOfEmployeeDal: EfEntityRepositoryBase<TerritoryIdOfEmployee, mert_software_taskContext>, ITerritoryIdOfEmployee
+    public class EfTerritoryIdOfEmployeeDal: EfEntityRepositoryBase<TerritoryIdOfEmployee, mert_software_taskContext>, ITerritoryIdOfEmployeeDal
     {
     }
 }

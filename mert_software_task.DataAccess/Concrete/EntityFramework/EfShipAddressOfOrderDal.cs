@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace mert_software_task.DataAccess.Concrete.EntityFramework
 {
-    public class EfShipAddressOfOrderDal : EfEntityRepositoryBase<ShipAddressOfOrder, mert_software_taskContext>, IShipAddressOfOrder
+    public class EfShipAddressOfOrderDal : EfEntityRepositoryBase<ShipAddressOfOrder, mert_software_taskContext>, IShipAddressOfOrderDal
     {
     }
 }

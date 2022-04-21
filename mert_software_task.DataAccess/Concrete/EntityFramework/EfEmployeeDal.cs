@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace mert_software_task.DataAccess.Concrete.EntityFramework
 {
-    public class EfEmployeeDal : EfEntityRepositoryBase<Employee, mert_software_taskContext>, IEmployee
+    public class EfEmployeeDal : EfEntityRepositoryBase<Employee, mert_software_taskContext>, IEmployeeDal
     {
     }
 }

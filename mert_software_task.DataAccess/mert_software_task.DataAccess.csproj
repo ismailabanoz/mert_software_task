@@ -51,19 +51,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\IAddressOfEmployee.cs" />
-    <Compile Include="Abstract\IAddressOfSupplier.cs" />
-    <Compile Include="Abstract\ICategory.cs" />
-    <Compile Include="Abstract\ICustomer.cs" />
-    <Compile Include="Abstract\IDetailOfOrder.cs" />
-    <Compile Include="Abstract\IEmployee.cs" />
+    <Compile Include="Abstract\IAddressOfEmployeeDal.cs" />
+    <Compile Include="Abstract\IAddressOfSupplierDal.cs" />
+    <Compile Include="Abstract\ICategoryDal.cs" />
+    <Compile Include="Abstract\ICustomerDal.cs" />
+    <Compile Include="Abstract\IDetailOfOrderDal.cs" />
+    <Compile Include="Abstract\IEmployeeDal.cs" />
     <Compile Include="Abstract\IEntityRepository.cs" />
-    <Compile Include="Abstract\IOrder.cs" />
-    <Compile Include="Abstract\IProduct.cs" />
-    <Compile Include="Abstract\IShipAddressOfOrder.cs" />
-    <Compile Include="Abstract\IShipper.cs" />
-    <Compile Include="Abstract\ISupplier.cs" />
-    <Compile Include="Abstract\ITerritoryIdOfEmployee.cs" />
+    <Compile Include="Abstract\IOrderDal.cs" />
+    <Compile Include="Abstract\IProductDal.cs" />
+    <Compile Include="Abstract\IShipAddressOfOrderDal.cs" />
+    <Compile Include="Abstract\IShipperDal.cs" />
+    <Compile Include="Abstract\ISupplierDal.cs" />
+    <Compile Include="Abstract\ITerritoryIdOfEmployeeDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfAddressOfEmployeeDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfAddressOfSupplierDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfCategoryDal.cs" />

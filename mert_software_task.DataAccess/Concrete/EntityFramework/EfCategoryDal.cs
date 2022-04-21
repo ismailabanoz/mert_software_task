@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace mert_software_task.DataAccess.Concrete.EntityFramework
 {
-    public class EfCategoryDal: EfEntityRepositoryBase<Category, mert_software_taskContext>, ICategory
+    public class EfCategoryDal: EfEntityRepositoryBase<Category, mert_software_taskContext>, ICategoryDal
     {
     }
 }

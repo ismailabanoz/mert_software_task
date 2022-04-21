@@ -4,10 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace mert_software_task.DataAccess.Abstract
 {
-    public interface IShipAddressOfOrder :IEntityRepository<ShipAddressOfOrder>
+    public interface ITerritoryIdOfEmployeeDal : IEntityRepository<TerritoryIdOfEmployee>
     {
     }
 }

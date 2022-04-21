@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace mert_software_task.DataAccess.Abstract
 {
-    public interface ITerritoryIdOfEmployee : IEntityRepository<TerritoryIdOfEmployee>
+    public interface IProductDal : IEntityRepository<Product>
     {
     }
 }

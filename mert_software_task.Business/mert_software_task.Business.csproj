@@ -63,16 +63,30 @@
     <Compile Include="Abstract\IShipperService.cs" />
     <Compile Include="Abstract\ISupplierService.cs" />
     <Compile Include="Abstract\ITerritoryIdOfEmployeeService.cs" />
+    <Compile Include="Concrete\AddressOfEmployeeManager.cs" />
+    <Compile Include="Concrete\AdressOfSupplierManager.cs" />
+    <Compile Include="Concrete\CategoryManager.cs" />
+    <Compile Include="Concrete\CustomerManager.cs" />
+    <Compile Include="Concrete\DetailOfOrderManager.cs" />
+    <Compile Include="Concrete\EmployeeManager.cs" />
+    <Compile Include="Concrete\OrderManager.cs" />
+    <Compile Include="Concrete\ProductManager.cs" />
+    <Compile Include="Concrete\ShipAddressOfOrderManager.cs" />
+    <Compile Include="Concrete\ShipperManager.cs" />
+    <Compile Include="Concrete\SupplierManager.cs" />
+    <Compile Include="Concrete\TerritoryIdOfEmployeeManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Concrete\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\mert_software_task.DataAccess\mert_software_task.DataAccess.csproj">
+      <Project>{49C97C7B-D69C-4F0F-86A2-1F70C84BB2E2}</Project>
+      <Name>mert_software_task.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\mert_software_task.Entities\mert_software_task.Entities.csproj">
       <Project>{078CBDE0-847B-458B-BD06-6485480435F9}</Project>
       <Name>mert_software_task.Entities</Name>

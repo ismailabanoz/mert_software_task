@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace mert_software_task.DataAccess.Concrete.EntityFramework
 {
-    public class EfAddressOfSupplierDal: EfEntityRepositoryBase<AddressOfSupplier, mert_software_taskContext>,IAddressOfSupplier
+    public class EfAddressOfSupplierDal: EfEntityRepositoryBase<AddressOfSupplier, mert_software_taskContext>,IAddressOfSupplierDal
     {
     }
 }

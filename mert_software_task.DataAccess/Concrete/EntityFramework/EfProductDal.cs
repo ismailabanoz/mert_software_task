@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace mert_software_task.DataAccess.Concrete.EntityFramework
 {
-    public class EfProductDal : EfEntityRepositoryBase<Product, mert_software_taskContext>, IProduct
+    public class EfProductDal : EfEntityRepositoryBase<Product, mert_software_taskContext>, IProductDal
     {
     }
 }

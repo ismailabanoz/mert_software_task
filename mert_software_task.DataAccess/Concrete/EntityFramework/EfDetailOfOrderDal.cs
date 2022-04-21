@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace mert_software_task.DataAccess.Concrete.EntityFramework
 {
-    public class EfDetailOfOrderDal : EfEntityRepositoryBase<DetailOfOrder, mert_software_taskContext>, IDetailOfOrder
+    public class EfDetailOfOrderDal : EfEntityRepositoryBase<DetailOfOrder, mert_software_taskContext>, IDetailOfOrderDal
     {
     }
 }
