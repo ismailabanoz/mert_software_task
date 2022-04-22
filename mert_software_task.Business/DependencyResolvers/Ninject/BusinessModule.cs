@@ -18,7 +18,17 @@ namespace mert_software_task.Business.DependencyResolvers.Ninject
             Bind<IProductService>().To<ProductManager>();
             Bind<IProductDal>().To<EfProductDal>();
 
-           
+            Bind<IOrderService>().To<OrderManager>();
+            Bind<IOrderDal>().To<EfOrderDal>();
+
+            Bind<IDetailOfOrderService>().To<DetailOfOrderManager>();
+            Bind<IDetailOfOrderDal>().To<EfDetailOfOrderDal>();
+
+            Bind<IShipAddressOfOrderService>().To<ShipAddressOfOrderManager>();
+            Bind<IShipAddressOfOrderDal>().To<EfShipAddressOfOrderDal>();
+
+
+
 
         }
     }

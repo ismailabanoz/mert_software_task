@@ -54,6 +54,7 @@
     <Compile Include="Abstract\IEntity.cs" />
     <Compile Include="Concrete\AddressOfEmployee.cs" />
     <Compile Include="Concrete\AddressOfSupplier.cs" />
+    <Compile Include="Concrete\API\Order.cs" />
     <Compile Include="Concrete\Category.cs" />
     <Compile Include="Concrete\Customer.cs" />
     <Compile Include="Concrete\DetailOfOrder.cs" />
