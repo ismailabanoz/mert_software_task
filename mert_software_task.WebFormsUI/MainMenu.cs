@@ -15,7 +15,7 @@ using System.Windows.Forms;
 
 namespace mert_software_task.WebFormsUI
 {
-    public partial class Form1 : Form
+    public partial class MainMenu : Form
     {
         public class Order : IEntity
         {
@@ -47,7 +47,7 @@ namespace mert_software_task.WebFormsUI
             public int quantity { get; set; }
             public float discount { get; set; }
         }
-        public Form1()
+        public MainMenu()
         {
             InitializeComponent();
             _productService = InstanceFactory.GetInstance<IProductService>();
@@ -61,20 +61,40 @@ namespace mert_software_task.WebFormsUI
         IDetailOfOrderService _detailOfOrderService;
         IShipAddressOfOrderService _shipAddressOfOrderService;
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("at");
-        }
+       
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void MainMenu_Load(object sender, EventArgs e)
         {
             List<Order> getOrders = SaveOrders();
 
             MessageBox.Show(getOrders.Count.ToString());
 
-            dataGridView1.DataSource = _shipAddressOfOrderService.GetAll();
 
 
+            string url = "https://northwind.vercel.app/api/products";
+            WebRequest request = HttpWebRequest.Create(url);
+            WebResponse response;
+            response = request.GetResponse();
+            StreamReader returnData = new StreamReader(response.GetResponseStream());
+            string getData = returnData.ReadToEnd();
+
+            List<Product> getProducts = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Product>>(getData);
+
+           
+            MessageBox.Show(getProducts.Count.ToString());
+        }
+        public class Product : IEntity
+        {
+            public int id { get; set; }
+            public int supplierId { get; set; }
+            public int categoryId { get; set; }
+            public string quantityPerUnit { get; set; }
+            public decimal unitPrice { get; set; }
+            public int unitsInStock { get; set; }
+            public int unitsOnOrder { get; set; }
+            public int reorderLevel { get; set; }
+            public bool discontinued { get; set; }
+            public string Name { get; set; }
         }
 
         private List<Order> SaveOrders()
