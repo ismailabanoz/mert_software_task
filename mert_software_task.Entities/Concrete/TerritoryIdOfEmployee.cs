@@ -10,7 +10,7 @@ namespace mert_software_task.Entities.Concrete
     public class TerritoryIdOfEmployee : IEntity
     {
         public int Id { get; set; }
-        public int EmployeId { get; set; }
-        public int TerritoryId { get; set; }
+        public int EmployeeId { get; set; }
+        public int Territory { get; set; }
     }
 }

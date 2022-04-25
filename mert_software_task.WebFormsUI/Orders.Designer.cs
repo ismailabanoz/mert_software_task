@@ -31,23 +31,23 @@ namespace mert_software_task.WebFormsUI
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.gbxAddOrder = new System.Windows.Forms.GroupBox();
-            this.lblCustomerAdd = new System.Windows.Forms.Label();
-            this.lblEmployeeAdd = new System.Windows.Forms.Label();
-            this.lblOrderDateAdd = new System.Windows.Forms.Label();
-            this.lblRequiredDateAdd = new System.Windows.Forms.Label();
-            this.lblShippedDateAdd = new System.Windows.Forms.Label();
-            this.lblShipViaAdd = new System.Windows.Forms.Label();
-            this.lblShipNameAdd = new System.Windows.Forms.Label();
-            this.lblFreightAdd = new System.Windows.Forms.Label();
-            this.dtpOrderDateAdd = new System.Windows.Forms.DateTimePicker();
-            this.dtpRequiredDateAdd = new System.Windows.Forms.DateTimePicker();
-            this.dtpShippedDateAdd = new System.Windows.Forms.DateTimePicker();
-            this.cbxCustomerAdd = new System.Windows.Forms.ComboBox();
-            this.cbxEmployeeAdd = new System.Windows.Forms.ComboBox();
-            this.tbxShipViaAdd = new System.Windows.Forms.TextBox();
-            this.tbxShipNameAdd = new System.Windows.Forms.TextBox();
-            this.tbxFreightAdd = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.tbxFreightAdd = new System.Windows.Forms.TextBox();
+            this.tbxShipNameAdd = new System.Windows.Forms.TextBox();
+            this.tbxShipViaAdd = new System.Windows.Forms.TextBox();
+            this.cbxEmployeeAdd = new System.Windows.Forms.ComboBox();
+            this.cbxCustomerAdd = new System.Windows.Forms.ComboBox();
+            this.dtpShippedDateAdd = new System.Windows.Forms.DateTimePicker();
+            this.dtpRequiredDateAdd = new System.Windows.Forms.DateTimePicker();
+            this.dtpOrderDateAdd = new System.Windows.Forms.DateTimePicker();
+            this.lblFreightAdd = new System.Windows.Forms.Label();
+            this.lblShipNameAdd = new System.Windows.Forms.Label();
+            this.lblShipViaAdd = new System.Windows.Forms.Label();
+            this.lblShippedDateAdd = new System.Windows.Forms.Label();
+            this.lblRequiredDateAdd = new System.Windows.Forms.Label();
+            this.lblOrderDateAdd = new System.Windows.Forms.Label();
+            this.lblEmployeeAdd = new System.Windows.Forms.Label();
+            this.lblCustomerAdd = new System.Windows.Forms.Label();
             this.gbxOrderUpdate = new System.Windows.Forms.GroupBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.tbxFreightUpdate = new System.Windows.Forms.TextBox();
@@ -77,7 +77,7 @@ namespace mert_software_task.WebFormsUI
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(14, 218);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1236, 203);
             this.dataGridView1.TabIndex = 0;
@@ -102,83 +102,80 @@ namespace mert_software_task.WebFormsUI
             this.gbxAddOrder.Controls.Add(this.lblEmployeeAdd);
             this.gbxAddOrder.Controls.Add(this.lblCustomerAdd);
             this.gbxAddOrder.Location = new System.Drawing.Point(14, 14);
-            this.gbxAddOrder.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.gbxAddOrder.Margin = new System.Windows.Forms.Padding(5);
             this.gbxAddOrder.Name = "gbxAddOrder";
-            this.gbxAddOrder.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.gbxAddOrder.Padding = new System.Windows.Forms.Padding(5);
             this.gbxAddOrder.Size = new System.Drawing.Size(1236, 194);
             this.gbxAddOrder.TabIndex = 1;
             this.gbxAddOrder.TabStop = false;
             this.gbxAddOrder.Text = "Add Order";
             // 
-            // lblCustomerAdd
+            // btnAdd
             // 
-            this.lblCustomerAdd.AutoSize = true;
-            this.lblCustomerAdd.Location = new System.Drawing.Point(10, 29);
-            this.lblCustomerAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblCustomerAdd.Name = "lblCustomerAdd";
-            this.lblCustomerAdd.Size = new System.Drawing.Size(85, 23);
-            this.lblCustomerAdd.TabIndex = 0;
-            this.lblCustomerAdd.Text = "Customer";
+            this.btnAdd.Location = new System.Drawing.Point(14, 148);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(114, 38);
+            this.btnAdd.TabIndex = 16;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // lblEmployeeAdd
+            // tbxFreightAdd
             // 
-            this.lblEmployeeAdd.AutoSize = true;
-            this.lblEmployeeAdd.Location = new System.Drawing.Point(10, 66);
-            this.lblEmployeeAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblEmployeeAdd.Name = "lblEmployeeAdd";
-            this.lblEmployeeAdd.Size = new System.Drawing.Size(85, 23);
-            this.lblEmployeeAdd.TabIndex = 1;
-            this.lblEmployeeAdd.Text = "Employee";
+            this.tbxFreightAdd.Location = new System.Drawing.Point(927, 26);
+            this.tbxFreightAdd.Name = "tbxFreightAdd";
+            this.tbxFreightAdd.Size = new System.Drawing.Size(301, 31);
+            this.tbxFreightAdd.TabIndex = 15;
             // 
-            // lblOrderDateAdd
+            // tbxShipNameAdd
             // 
-            this.lblOrderDateAdd.AutoSize = true;
-            this.lblOrderDateAdd.Location = new System.Drawing.Point(10, 105);
-            this.lblOrderDateAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblOrderDateAdd.Name = "lblOrderDateAdd";
-            this.lblOrderDateAdd.Size = new System.Drawing.Size(96, 23);
-            this.lblOrderDateAdd.TabIndex = 2;
-            this.lblOrderDateAdd.Text = "Order Date";
+            this.tbxShipNameAdd.Location = new System.Drawing.Point(927, 63);
+            this.tbxShipNameAdd.Name = "tbxShipNameAdd";
+            this.tbxShipNameAdd.Size = new System.Drawing.Size(301, 31);
+            this.tbxShipNameAdd.TabIndex = 14;
             // 
-            // lblRequiredDateAdd
+            // tbxShipViaAdd
             // 
-            this.lblRequiredDateAdd.AutoSize = true;
-            this.lblRequiredDateAdd.Location = new System.Drawing.Point(403, 29);
-            this.lblRequiredDateAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblRequiredDateAdd.Name = "lblRequiredDateAdd";
-            this.lblRequiredDateAdd.Size = new System.Drawing.Size(119, 23);
-            this.lblRequiredDateAdd.TabIndex = 3;
-            this.lblRequiredDateAdd.Text = "Required Date";
+            this.tbxShipViaAdd.Location = new System.Drawing.Point(530, 100);
+            this.tbxShipViaAdd.Name = "tbxShipViaAdd";
+            this.tbxShipViaAdd.Size = new System.Drawing.Size(266, 31);
+            this.tbxShipViaAdd.TabIndex = 13;
             // 
-            // lblShippedDateAdd
+            // cbxEmployeeAdd
             // 
-            this.lblShippedDateAdd.AutoSize = true;
-            this.lblShippedDateAdd.Location = new System.Drawing.Point(403, 66);
-            this.lblShippedDateAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblShippedDateAdd.Name = "lblShippedDateAdd";
-            this.lblShippedDateAdd.Size = new System.Drawing.Size(112, 23);
-            this.lblShippedDateAdd.TabIndex = 4;
-            this.lblShippedDateAdd.Text = "Shipped Date";
+            this.cbxEmployeeAdd.FormattingEnabled = true;
+            this.cbxEmployeeAdd.Location = new System.Drawing.Point(114, 63);
+            this.cbxEmployeeAdd.Name = "cbxEmployeeAdd";
+            this.cbxEmployeeAdd.Size = new System.Drawing.Size(266, 31);
+            this.cbxEmployeeAdd.TabIndex = 12;
             // 
-            // lblShipViaAdd
+            // cbxCustomerAdd
             // 
-            this.lblShipViaAdd.AutoSize = true;
-            this.lblShipViaAdd.Location = new System.Drawing.Point(403, 108);
-            this.lblShipViaAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblShipViaAdd.Name = "lblShipViaAdd";
-            this.lblShipViaAdd.Size = new System.Drawing.Size(71, 23);
-            this.lblShipViaAdd.TabIndex = 5;
-            this.lblShipViaAdd.Text = "Ship Via";
+            this.cbxCustomerAdd.FormattingEnabled = true;
+            this.cbxCustomerAdd.Location = new System.Drawing.Point(114, 26);
+            this.cbxCustomerAdd.Name = "cbxCustomerAdd";
+            this.cbxCustomerAdd.Size = new System.Drawing.Size(266, 31);
+            this.cbxCustomerAdd.TabIndex = 11;
             // 
-            // lblShipNameAdd
+            // dtpShippedDateAdd
             // 
-            this.lblShipNameAdd.AutoSize = true;
-            this.lblShipNameAdd.Location = new System.Drawing.Point(827, 66);
-            this.lblShipNameAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblShipNameAdd.Name = "lblShipNameAdd";
-            this.lblShipNameAdd.Size = new System.Drawing.Size(92, 23);
-            this.lblShipNameAdd.TabIndex = 6;
-            this.lblShipNameAdd.Text = "Ship Name";
+            this.dtpShippedDateAdd.Location = new System.Drawing.Point(530, 63);
+            this.dtpShippedDateAdd.Name = "dtpShippedDateAdd";
+            this.dtpShippedDateAdd.Size = new System.Drawing.Size(266, 31);
+            this.dtpShippedDateAdd.TabIndex = 10;
+            // 
+            // dtpRequiredDateAdd
+            // 
+            this.dtpRequiredDateAdd.Location = new System.Drawing.Point(530, 26);
+            this.dtpRequiredDateAdd.Name = "dtpRequiredDateAdd";
+            this.dtpRequiredDateAdd.Size = new System.Drawing.Size(266, 31);
+            this.dtpRequiredDateAdd.TabIndex = 9;
+            // 
+            // dtpOrderDateAdd
+            // 
+            this.dtpOrderDateAdd.Location = new System.Drawing.Point(114, 100);
+            this.dtpOrderDateAdd.Name = "dtpOrderDateAdd";
+            this.dtpOrderDateAdd.Size = new System.Drawing.Size(266, 31);
+            this.dtpOrderDateAdd.TabIndex = 8;
             // 
             // lblFreightAdd
             // 
@@ -190,72 +187,75 @@ namespace mert_software_task.WebFormsUI
             this.lblFreightAdd.TabIndex = 7;
             this.lblFreightAdd.Text = "Freight";
             // 
-            // dtpOrderDateAdd
+            // lblShipNameAdd
             // 
-            this.dtpOrderDateAdd.Location = new System.Drawing.Point(114, 100);
-            this.dtpOrderDateAdd.Name = "dtpOrderDateAdd";
-            this.dtpOrderDateAdd.Size = new System.Drawing.Size(266, 31);
-            this.dtpOrderDateAdd.TabIndex = 8;
+            this.lblShipNameAdd.AutoSize = true;
+            this.lblShipNameAdd.Location = new System.Drawing.Point(827, 66);
+            this.lblShipNameAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblShipNameAdd.Name = "lblShipNameAdd";
+            this.lblShipNameAdd.Size = new System.Drawing.Size(92, 23);
+            this.lblShipNameAdd.TabIndex = 6;
+            this.lblShipNameAdd.Text = "Ship Name";
             // 
-            // dtpRequiredDateAdd
+            // lblShipViaAdd
             // 
-            this.dtpRequiredDateAdd.Location = new System.Drawing.Point(530, 26);
-            this.dtpRequiredDateAdd.Name = "dtpRequiredDateAdd";
-            this.dtpRequiredDateAdd.Size = new System.Drawing.Size(266, 31);
-            this.dtpRequiredDateAdd.TabIndex = 9;
+            this.lblShipViaAdd.AutoSize = true;
+            this.lblShipViaAdd.Location = new System.Drawing.Point(403, 108);
+            this.lblShipViaAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblShipViaAdd.Name = "lblShipViaAdd";
+            this.lblShipViaAdd.Size = new System.Drawing.Size(71, 23);
+            this.lblShipViaAdd.TabIndex = 5;
+            this.lblShipViaAdd.Text = "Ship Via";
             // 
-            // dtpShippedDateAdd
+            // lblShippedDateAdd
             // 
-            this.dtpShippedDateAdd.Location = new System.Drawing.Point(530, 63);
-            this.dtpShippedDateAdd.Name = "dtpShippedDateAdd";
-            this.dtpShippedDateAdd.Size = new System.Drawing.Size(266, 31);
-            this.dtpShippedDateAdd.TabIndex = 10;
+            this.lblShippedDateAdd.AutoSize = true;
+            this.lblShippedDateAdd.Location = new System.Drawing.Point(403, 66);
+            this.lblShippedDateAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblShippedDateAdd.Name = "lblShippedDateAdd";
+            this.lblShippedDateAdd.Size = new System.Drawing.Size(112, 23);
+            this.lblShippedDateAdd.TabIndex = 4;
+            this.lblShippedDateAdd.Text = "Shipped Date";
             // 
-            // cbxCustomerAdd
+            // lblRequiredDateAdd
             // 
-            this.cbxCustomerAdd.FormattingEnabled = true;
-            this.cbxCustomerAdd.Location = new System.Drawing.Point(114, 26);
-            this.cbxCustomerAdd.Name = "cbxCustomerAdd";
-            this.cbxCustomerAdd.Size = new System.Drawing.Size(266, 31);
-            this.cbxCustomerAdd.TabIndex = 11;
+            this.lblRequiredDateAdd.AutoSize = true;
+            this.lblRequiredDateAdd.Location = new System.Drawing.Point(403, 29);
+            this.lblRequiredDateAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblRequiredDateAdd.Name = "lblRequiredDateAdd";
+            this.lblRequiredDateAdd.Size = new System.Drawing.Size(119, 23);
+            this.lblRequiredDateAdd.TabIndex = 3;
+            this.lblRequiredDateAdd.Text = "Required Date";
             // 
-            // cbxEmployeeAdd
+            // lblOrderDateAdd
             // 
-            this.cbxEmployeeAdd.FormattingEnabled = true;
-            this.cbxEmployeeAdd.Location = new System.Drawing.Point(114, 63);
-            this.cbxEmployeeAdd.Name = "cbxEmployeeAdd";
-            this.cbxEmployeeAdd.Size = new System.Drawing.Size(266, 31);
-            this.cbxEmployeeAdd.TabIndex = 12;
+            this.lblOrderDateAdd.AutoSize = true;
+            this.lblOrderDateAdd.Location = new System.Drawing.Point(10, 105);
+            this.lblOrderDateAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblOrderDateAdd.Name = "lblOrderDateAdd";
+            this.lblOrderDateAdd.Size = new System.Drawing.Size(96, 23);
+            this.lblOrderDateAdd.TabIndex = 2;
+            this.lblOrderDateAdd.Text = "Order Date";
             // 
-            // tbxShipViaAdd
+            // lblEmployeeAdd
             // 
-            this.tbxShipViaAdd.Location = new System.Drawing.Point(530, 100);
-            this.tbxShipViaAdd.Name = "tbxShipViaAdd";
-            this.tbxShipViaAdd.Size = new System.Drawing.Size(266, 31);
-            this.tbxShipViaAdd.TabIndex = 13;
+            this.lblEmployeeAdd.AutoSize = true;
+            this.lblEmployeeAdd.Location = new System.Drawing.Point(10, 66);
+            this.lblEmployeeAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblEmployeeAdd.Name = "lblEmployeeAdd";
+            this.lblEmployeeAdd.Size = new System.Drawing.Size(85, 23);
+            this.lblEmployeeAdd.TabIndex = 1;
+            this.lblEmployeeAdd.Text = "Employee";
             // 
-            // tbxShipNameAdd
+            // lblCustomerAdd
             // 
-            this.tbxShipNameAdd.Location = new System.Drawing.Point(927, 63);
-            this.tbxShipNameAdd.Name = "tbxShipNameAdd";
-            this.tbxShipNameAdd.Size = new System.Drawing.Size(301, 31);
-            this.tbxShipNameAdd.TabIndex = 14;
-            // 
-            // tbxFreightAdd
-            // 
-            this.tbxFreightAdd.Location = new System.Drawing.Point(927, 26);
-            this.tbxFreightAdd.Name = "tbxFreightAdd";
-            this.tbxFreightAdd.Size = new System.Drawing.Size(301, 31);
-            this.tbxFreightAdd.TabIndex = 15;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(14, 148);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(114, 38);
-            this.btnAdd.TabIndex = 16;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.lblCustomerAdd.AutoSize = true;
+            this.lblCustomerAdd.Location = new System.Drawing.Point(10, 29);
+            this.lblCustomerAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblCustomerAdd.Name = "lblCustomerAdd";
+            this.lblCustomerAdd.Size = new System.Drawing.Size(85, 23);
+            this.lblCustomerAdd.TabIndex = 0;
+            this.lblCustomerAdd.Text = "Customer";
             // 
             // gbxOrderUpdate
             // 
@@ -451,9 +451,10 @@ namespace mert_software_task.WebFormsUI
             this.Controls.Add(this.gbxAddOrder);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Orders";
             this.Text = "Orders";
+            this.Load += new System.EventHandler(this.Orders_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gbxAddOrder.ResumeLayout(false);
             this.gbxAddOrder.PerformLayout();

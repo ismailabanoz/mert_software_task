@@ -9,8 +9,8 @@ namespace mert_software_task.Entities.Concrete
 {
     public class Customer :IEntity
     {
-        public string Id { get; set; }
-        public int AdressId { get; set; }
+        public int Id { get; set; }
+        public string CustomerId { get; set; }
         public string CompanyName { get; set; }
         public string ContactName { get; set; }
         public string ContactTitle { get; set; }

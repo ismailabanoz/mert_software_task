@@ -27,8 +27,32 @@ namespace mert_software_task.Business.DependencyResolvers.Ninject
             Bind<IShipAddressOfOrderService>().To<ShipAddressOfOrderManager>();
             Bind<IShipAddressOfOrderDal>().To<EfShipAddressOfOrderDal>();
 
+            Bind<IAddressOfCustomerService>().To<AddressOfCustomerManager>();
+            Bind<IAddressOfCustomerDal>().To<EfAddressOfCustomerDal>();
 
+            Bind<IAddressOfEmployeeService>().To<AddressOfEmployeeManager>();
+            Bind<IAddressOfEmployeeDal>().To<EfAddressOfEmployeeDal>();
 
+            Bind<IAddressOfSupplierService>().To<AdressOfSupplierManager>();
+            Bind<IAddressOfSupplierDal>().To<EfAddressOfSupplierDal>();
+
+            Bind<ICategoryService>().To<CategoryManager>();
+            Bind<ICategoryDal>().To<EfCategoryDal>();
+
+            Bind<ICustomerService>().To<CustomerManager>();
+            Bind<ICustomerDal>().To<EfCustomerDal>();
+
+            Bind<IEmployeeService>().To<EmployeeManager>();
+            Bind<IEmployeeDal>().To<EfEmployeeDal>();
+
+            Bind<IShipperService>().To<ShipperManager>();
+            Bind<IShipperDal>().To<EfShipperDal>();
+
+            Bind<ISupplierService>().To<SupplierManager>();
+            Bind<ISupplierDal>().To<EfSupplierDal>();
+
+            Bind<ITerritoryIdOfEmployeeService>().To<TerritoryIdOfEmployeeManager>();
+            Bind<ITerritoryIdOfEmployeeDal>().To<EfTerritoryIdOfEmployeeDal>();
 
         }
     }

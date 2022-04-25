@@ -1,11 +1,11 @@
-﻿using mert_software_task.Entities.Abstract;
+﻿using mert_software_task.Api.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace mert_software_task.Entities.Concrete.API
+namespace mert_software_task.Api.Concrete.Models
 {
     public class Product : IEntity
     {
@@ -18,6 +18,6 @@ namespace mert_software_task.Entities.Concrete.API
         public int unitsOnOrder { get; set; }
         public int reorderLevel { get; set; }
         public bool discontinued { get; set; }
-        public string Name { get; set; }
+        public string name { get; set; }
     }
 }

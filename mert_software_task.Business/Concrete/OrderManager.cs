@@ -1,5 +1,6 @@
 ﻿using mert_software_task.Business.Abstract;
 using mert_software_task.DataAccess.Abstract;
+using mert_software_task.Entities.ComplexTypes;
 using mert_software_task.Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -39,6 +40,10 @@ namespace mert_software_task.Business.Concrete
         {
             string keyToLower = key.ToLower();
             return _OrderDal.GetAll().Where(p => p.ShipName.ToLower().Contains(keyToLower)).ToList();
+        }
+        public List<GetOrders> GetOrders()
+        {
+            return _OrderDal.GetOrders();
         }
     }
 }

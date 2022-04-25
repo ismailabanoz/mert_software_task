@@ -10,9 +10,9 @@ namespace mert_software_task.Business.Abstract
     public interface IShipperService
     {
         List<Shipper> GetAll();
-        void Add(Shipper archive);
-        void Update(Shipper archive);
-        void Delete(Shipper archive);
+        void Add(Shipper shipper);
+        void Update(Shipper shipper);
+        void Delete(Shipper shipper);
         List<Shipper> SearchAll(string key);
     }
 }

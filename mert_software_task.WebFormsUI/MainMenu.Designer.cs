@@ -36,6 +36,7 @@ namespace mert_software_task.WebFormsUI
             this.btnSuppliers = new System.Windows.Forms.Button();
             this.btnShippers = new System.Windows.Forms.Button();
             this.btnEmployess = new System.Windows.Forms.Button();
+            this.btnPullAndSaveData = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOrders
@@ -46,6 +47,7 @@ namespace mert_software_task.WebFormsUI
             this.btnOrders.TabIndex = 0;
             this.btnOrders.Text = "Orders";
             this.btnOrders.UseVisualStyleBackColor = true;
+            this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
             // 
             // btnProducts
             // 
@@ -55,6 +57,7 @@ namespace mert_software_task.WebFormsUI
             this.btnProducts.TabIndex = 1;
             this.btnProducts.Text = "Products";
             this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // btnCategories
             // 
@@ -64,6 +67,7 @@ namespace mert_software_task.WebFormsUI
             this.btnCategories.TabIndex = 2;
             this.btnCategories.Text = "Categories";
             this.btnCategories.UseVisualStyleBackColor = true;
+            this.btnCategories.Click += new System.EventHandler(this.btnCategories_Click);
             // 
             // btnCustomers
             // 
@@ -73,6 +77,7 @@ namespace mert_software_task.WebFormsUI
             this.btnCustomers.TabIndex = 3;
             this.btnCustomers.Text = "Customers";
             this.btnCustomers.UseVisualStyleBackColor = true;
+            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
             // btnSuppliers
             // 
@@ -82,6 +87,7 @@ namespace mert_software_task.WebFormsUI
             this.btnSuppliers.TabIndex = 4;
             this.btnSuppliers.Text = "Suppliers";
             this.btnSuppliers.UseVisualStyleBackColor = true;
+            this.btnSuppliers.Click += new System.EventHandler(this.btnSuppliers_Click);
             // 
             // btnShippers
             // 
@@ -91,6 +97,7 @@ namespace mert_software_task.WebFormsUI
             this.btnShippers.TabIndex = 5;
             this.btnShippers.Text = "Shippers";
             this.btnShippers.UseVisualStyleBackColor = true;
+            this.btnShippers.Click += new System.EventHandler(this.btnShippers_Click);
             // 
             // btnEmployess
             // 
@@ -100,12 +107,24 @@ namespace mert_software_task.WebFormsUI
             this.btnEmployess.TabIndex = 6;
             this.btnEmployess.Text = "Employess";
             this.btnEmployess.UseVisualStyleBackColor = true;
+            this.btnEmployess.Click += new System.EventHandler(this.btnEmployess_Click);
+            // 
+            // btnPullAndSaveData
+            // 
+            this.btnPullAndSaveData.Location = new System.Drawing.Point(121, 159);
+            this.btnPullAndSaveData.Name = "btnPullAndSaveData";
+            this.btnPullAndSaveData.Size = new System.Drawing.Size(103, 43);
+            this.btnPullAndSaveData.TabIndex = 7;
+            this.btnPullAndSaveData.Text = "Pull And Save Data";
+            this.btnPullAndSaveData.UseVisualStyleBackColor = true;
+            this.btnPullAndSaveData.Click += new System.EventHandler(this.btnPullAndSaveData_Click);
             // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnPullAndSaveData);
             this.Controls.Add(this.btnEmployess);
             this.Controls.Add(this.btnShippers);
             this.Controls.Add(this.btnSuppliers);
@@ -129,6 +148,7 @@ namespace mert_software_task.WebFormsUI
         private System.Windows.Forms.Button btnSuppliers;
         private System.Windows.Forms.Button btnShippers;
         private System.Windows.Forms.Button btnEmployess;
+        private System.Windows.Forms.Button btnPullAndSaveData;
     }
 }
 

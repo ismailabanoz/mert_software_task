@@ -160,6 +160,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\mert_software_task.Api\mert_software_task.Api.csproj">
+      <Project>{2B72A95D-AEB9-4672-BBCD-E76643986D67}</Project>
+      <Name>mert_software_task.Api</Name>
+    </ProjectReference>
     <ProjectReference Include="..\mert_software_task.Business\mert_software_task.Business.csproj">
       <Project>{CD32FF0D-4507-4F97-A541-FDDA47899892}</Project>
       <Name>mert_software_task.Business</Name>

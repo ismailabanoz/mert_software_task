@@ -38,7 +38,7 @@ namespace mert_software_task.Business.Concrete
         public List<TerritoryIdOfEmployee> SearchAll(string key)
         {
             string keyToLower = key.ToLower();
-            return _TerritoryIdOfEmployeeDal.GetAll().Where(p => p.EmployeId.ToString().Contains(keyToLower)).ToList();
+            return _TerritoryIdOfEmployeeDal.GetAll().Where(p => p.EmployeeId.ToString().Contains(keyToLower)).ToList();
         }
     }
 }

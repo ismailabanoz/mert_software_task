@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAddressOfCustomerDal.cs" />
     <Compile Include="Abstract\IAddressOfEmployeeDal.cs" />
     <Compile Include="Abstract\IAddressOfSupplierDal.cs" />
     <Compile Include="Abstract\ICategoryDal.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Abstract\IShipperDal.cs" />
     <Compile Include="Abstract\ISupplierDal.cs" />
     <Compile Include="Abstract\ITerritoryIdOfEmployeeDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfAddressOfCustomerDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfAddressOfEmployeeDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfAddressOfSupplierDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfCategoryDal.cs" />

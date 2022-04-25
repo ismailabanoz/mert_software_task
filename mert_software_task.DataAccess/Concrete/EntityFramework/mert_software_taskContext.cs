@@ -22,5 +22,6 @@ namespace mert_software_task.DataAccess.Concrete.EntityFramework
         public DbSet<Shipper> Shippers { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<TerritoryIdOfEmployee> TerritoryIdsOfEmployess { get; set; }
+        public DbSet<AddressOfCustomer> AddressOfCustomers { get; set; }
     }
 }

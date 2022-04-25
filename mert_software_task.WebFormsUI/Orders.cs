@@ -1,4 +1,6 @@
-﻿using System;
+﻿using mert_software_task.Business.Abstract;
+using mert_software_task.Business.DependencyResolvers.Ninject;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,20 @@ namespace mert_software_task.WebFormsUI
         public Orders()
         {
             InitializeComponent();
+            _orderService = InstanceFactory.GetInstance<IOrderService>();
+            _detailOfOrderService = InstanceFactory.GetInstance<IDetailOfOrderService>();
+            _shipAddressOfOrderService = InstanceFactory.GetInstance<IShipAddressOfOrderService>();
+        }
+        IOrderService _orderService;
+        IDetailOfOrderService _detailOfOrderService;
+        IShipAddressOfOrderService _shipAddressOfOrderService;
+        private void Orders_Load(object sender, EventArgs e)
+        {
+           var address= _shipAddressOfOrderService.GetAll();
+            var orders= _orderService.GetAll();
+            var detail= _detailOfOrderService.GetAll();
+
+            dataGridView1.DataSource = _orderService.GetOrders();
         }
     }
 }

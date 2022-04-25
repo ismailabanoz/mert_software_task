@@ -1,17 +1,17 @@
-﻿using mert_software_task.Entities.Abstract;
+﻿using mert_software_task.Api.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace mert_software_task.Entities.Concrete.API
+namespace mert_software_task.Api.Concrete.Models
 {
     public class DetailsOfOrder :IEntity
     {
         public int productId { get; set; }
-        public int unitPrice { get; set; }
+        public decimal unitPrice { get; set; }
         public int quantity { get; set; }
-        public int discount { get; set; }
+        public float discount { get; set; }
     }
 }

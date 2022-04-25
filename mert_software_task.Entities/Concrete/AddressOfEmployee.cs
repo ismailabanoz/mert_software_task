@@ -10,6 +10,7 @@ namespace mert_software_task.Entities.Concrete
     public class AddressOfEmployee : IEntity
     {
         public int Id { get; set; }
+        public int EmployeeId { get; set; }
         public string Street { get; set; }
         public string City { get; set; }
         public string Region { get; set; }
