@@ -54,7 +54,7 @@ namespace mert_software_task.WebFormsUI
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private List<Employee> SaveEmloyess()
@@ -390,7 +390,7 @@ namespace mert_software_task.WebFormsUI
         {
             try
             {
-                MessageBox.Show("This process may take some time.");
+                MessageBox.Show("This process may take some time.", "Information");
                 List<Order> getOrders = SaveOrders();
                 List<Customer> getCustomers = SaveCustomers();
                 SaveShippers();
@@ -398,7 +398,7 @@ namespace mert_software_task.WebFormsUI
                 List<Product> getProducts = SaveProducts();
                 List<Supplier> getSuppliers = SaveSuppliers();
                 List<Employee> getEmployess = SaveEmloyess();
-                MessageBox.Show("Data transferred to database successfully");
+                MessageBox.Show("Data transferred to database successfully", "Information");
             }
             catch
             {

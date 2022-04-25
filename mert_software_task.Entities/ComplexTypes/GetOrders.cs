@@ -9,6 +9,7 @@ namespace mert_software_task.Entities.ComplexTypes
 {
     public class GetOrders : IEntity
     {
+        public int Id { get; set; }
         public int OrderId { get; set; }
         public string CustomerId { get; set; }
         public int EmployeeId { get; set; }

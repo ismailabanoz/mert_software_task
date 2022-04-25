@@ -32,6 +32,11 @@ namespace mert_software_task.WebFormsUI
             this.button3 = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.gbxAddProduct = new System.Windows.Forms.GroupBox();
+            this.tbxUnitsInStockAdd = new System.Windows.Forms.TextBox();
+            this.tbxUnitPriceAdd = new System.Windows.Forms.TextBox();
+            this.cbxDiscontinuedAdd = new System.Windows.Forms.ComboBox();
+            this.lblNameAdd = new System.Windows.Forms.Label();
+            this.tbxQuantityPerUniteAdd = new System.Windows.Forms.TextBox();
             this.tbxReorderLevelAdd = new System.Windows.Forms.TextBox();
             this.tbxNameAdd = new System.Windows.Forms.TextBox();
             this.tbxUnitsOnOrderAdd = new System.Windows.Forms.TextBox();
@@ -46,11 +51,6 @@ namespace mert_software_task.WebFormsUI
             this.lblCategoryAdd = new System.Windows.Forms.Label();
             this.lblSupplierAdd = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tbxQuantityPerUniteAdd = new System.Windows.Forms.TextBox();
-            this.lblNameAdd = new System.Windows.Forms.Label();
-            this.cbxDiscontinuedAdd = new System.Windows.Forms.ComboBox();
-            this.tbxUnitPriceAdd = new System.Windows.Forms.TextBox();
-            this.tbxUnitsInStockAdd = new System.Windows.Forms.TextBox();
             this.gbxUpdateProduct = new System.Windows.Forms.GroupBox();
             this.tbxUnitsInStockUpdate = new System.Windows.Forms.TextBox();
             this.tbxUnitPriceUpdate = new System.Windows.Forms.TextBox();
@@ -123,6 +123,45 @@ namespace mert_software_task.WebFormsUI
             this.gbxAddProduct.TabIndex = 19;
             this.gbxAddProduct.TabStop = false;
             this.gbxAddProduct.Text = "Add Product";
+            // 
+            // tbxUnitsInStockAdd
+            // 
+            this.tbxUnitsInStockAdd.Location = new System.Drawing.Point(538, 63);
+            this.tbxUnitsInStockAdd.Name = "tbxUnitsInStockAdd";
+            this.tbxUnitsInStockAdd.Size = new System.Drawing.Size(258, 31);
+            this.tbxUnitsInStockAdd.TabIndex = 21;
+            // 
+            // tbxUnitPriceAdd
+            // 
+            this.tbxUnitPriceAdd.Location = new System.Drawing.Point(538, 26);
+            this.tbxUnitPriceAdd.Name = "tbxUnitPriceAdd";
+            this.tbxUnitPriceAdd.Size = new System.Drawing.Size(258, 31);
+            this.tbxUnitPriceAdd.TabIndex = 20;
+            // 
+            // cbxDiscontinuedAdd
+            // 
+            this.cbxDiscontinuedAdd.FormattingEnabled = true;
+            this.cbxDiscontinuedAdd.Location = new System.Drawing.Point(950, 63);
+            this.cbxDiscontinuedAdd.Name = "cbxDiscontinuedAdd";
+            this.cbxDiscontinuedAdd.Size = new System.Drawing.Size(278, 31);
+            this.cbxDiscontinuedAdd.TabIndex = 19;
+            // 
+            // lblNameAdd
+            // 
+            this.lblNameAdd.AutoSize = true;
+            this.lblNameAdd.Location = new System.Drawing.Point(827, 105);
+            this.lblNameAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblNameAdd.Name = "lblNameAdd";
+            this.lblNameAdd.Size = new System.Drawing.Size(55, 23);
+            this.lblNameAdd.TabIndex = 18;
+            this.lblNameAdd.Text = "Name";
+            // 
+            // tbxQuantityPerUniteAdd
+            // 
+            this.tbxQuantityPerUniteAdd.Location = new System.Drawing.Point(162, 102);
+            this.tbxQuantityPerUniteAdd.Name = "tbxQuantityPerUniteAdd";
+            this.tbxQuantityPerUniteAdd.Size = new System.Drawing.Size(218, 31);
+            this.tbxQuantityPerUniteAdd.TabIndex = 17;
             // 
             // tbxReorderLevelAdd
             // 
@@ -250,45 +289,6 @@ namespace mert_software_task.WebFormsUI
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1236, 203);
             this.dataGridView1.TabIndex = 18;
-            // 
-            // tbxQuantityPerUniteAdd
-            // 
-            this.tbxQuantityPerUniteAdd.Location = new System.Drawing.Point(162, 102);
-            this.tbxQuantityPerUniteAdd.Name = "tbxQuantityPerUniteAdd";
-            this.tbxQuantityPerUniteAdd.Size = new System.Drawing.Size(218, 31);
-            this.tbxQuantityPerUniteAdd.TabIndex = 17;
-            // 
-            // lblNameAdd
-            // 
-            this.lblNameAdd.AutoSize = true;
-            this.lblNameAdd.Location = new System.Drawing.Point(827, 105);
-            this.lblNameAdd.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblNameAdd.Name = "lblNameAdd";
-            this.lblNameAdd.Size = new System.Drawing.Size(55, 23);
-            this.lblNameAdd.TabIndex = 18;
-            this.lblNameAdd.Text = "Name";
-            // 
-            // cbxDiscontinuedAdd
-            // 
-            this.cbxDiscontinuedAdd.FormattingEnabled = true;
-            this.cbxDiscontinuedAdd.Location = new System.Drawing.Point(950, 63);
-            this.cbxDiscontinuedAdd.Name = "cbxDiscontinuedAdd";
-            this.cbxDiscontinuedAdd.Size = new System.Drawing.Size(278, 31);
-            this.cbxDiscontinuedAdd.TabIndex = 19;
-            // 
-            // tbxUnitPriceAdd
-            // 
-            this.tbxUnitPriceAdd.Location = new System.Drawing.Point(538, 26);
-            this.tbxUnitPriceAdd.Name = "tbxUnitPriceAdd";
-            this.tbxUnitPriceAdd.Size = new System.Drawing.Size(258, 31);
-            this.tbxUnitPriceAdd.TabIndex = 20;
-            // 
-            // tbxUnitsInStockAdd
-            // 
-            this.tbxUnitsInStockAdd.Location = new System.Drawing.Point(538, 63);
-            this.tbxUnitsInStockAdd.Name = "tbxUnitsInStockAdd";
-            this.tbxUnitsInStockAdd.Size = new System.Drawing.Size(258, 31);
-            this.tbxUnitsInStockAdd.TabIndex = 21;
             // 
             // gbxUpdateProduct
             // 
@@ -495,9 +495,11 @@ namespace mert_software_task.WebFormsUI
             this.Controls.Add(this.gbxAddProduct);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Products";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Products";
+            this.Load += new System.EventHandler(this.Products_Load);
             this.gbxAddProduct.ResumeLayout(false);
             this.gbxAddProduct.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

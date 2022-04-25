@@ -41,7 +41,7 @@ namespace mert_software_task.WebFormsUI
             // 
             // btnOrders
             // 
-            this.btnOrders.Location = new System.Drawing.Point(12, 12);
+            this.btnOrders.Location = new System.Drawing.Point(48, 36);
             this.btnOrders.Name = "btnOrders";
             this.btnOrders.Size = new System.Drawing.Size(103, 43);
             this.btnOrders.TabIndex = 0;
@@ -51,7 +51,7 @@ namespace mert_software_task.WebFormsUI
             // 
             // btnProducts
             // 
-            this.btnProducts.Location = new System.Drawing.Point(12, 61);
+            this.btnProducts.Location = new System.Drawing.Point(48, 85);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.Size = new System.Drawing.Size(103, 43);
             this.btnProducts.TabIndex = 1;
@@ -61,7 +61,7 @@ namespace mert_software_task.WebFormsUI
             // 
             // btnCategories
             // 
-            this.btnCategories.Location = new System.Drawing.Point(12, 110);
+            this.btnCategories.Location = new System.Drawing.Point(48, 134);
             this.btnCategories.Name = "btnCategories";
             this.btnCategories.Size = new System.Drawing.Size(103, 43);
             this.btnCategories.TabIndex = 2;
@@ -71,7 +71,7 @@ namespace mert_software_task.WebFormsUI
             // 
             // btnCustomers
             // 
-            this.btnCustomers.Location = new System.Drawing.Point(12, 159);
+            this.btnCustomers.Location = new System.Drawing.Point(48, 183);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Size = new System.Drawing.Size(103, 43);
             this.btnCustomers.TabIndex = 3;
@@ -81,7 +81,7 @@ namespace mert_software_task.WebFormsUI
             // 
             // btnSuppliers
             // 
-            this.btnSuppliers.Location = new System.Drawing.Point(121, 12);
+            this.btnSuppliers.Location = new System.Drawing.Point(157, 36);
             this.btnSuppliers.Name = "btnSuppliers";
             this.btnSuppliers.Size = new System.Drawing.Size(103, 43);
             this.btnSuppliers.TabIndex = 4;
@@ -91,7 +91,7 @@ namespace mert_software_task.WebFormsUI
             // 
             // btnShippers
             // 
-            this.btnShippers.Location = new System.Drawing.Point(121, 61);
+            this.btnShippers.Location = new System.Drawing.Point(157, 85);
             this.btnShippers.Name = "btnShippers";
             this.btnShippers.Size = new System.Drawing.Size(103, 43);
             this.btnShippers.TabIndex = 5;
@@ -101,7 +101,7 @@ namespace mert_software_task.WebFormsUI
             // 
             // btnEmployess
             // 
-            this.btnEmployess.Location = new System.Drawing.Point(121, 110);
+            this.btnEmployess.Location = new System.Drawing.Point(157, 134);
             this.btnEmployess.Name = "btnEmployess";
             this.btnEmployess.Size = new System.Drawing.Size(103, 43);
             this.btnEmployess.TabIndex = 6;
@@ -111,7 +111,7 @@ namespace mert_software_task.WebFormsUI
             // 
             // btnPullAndSaveData
             // 
-            this.btnPullAndSaveData.Location = new System.Drawing.Point(121, 159);
+            this.btnPullAndSaveData.Location = new System.Drawing.Point(157, 183);
             this.btnPullAndSaveData.Name = "btnPullAndSaveData";
             this.btnPullAndSaveData.Size = new System.Drawing.Size(103, 43);
             this.btnPullAndSaveData.TabIndex = 7;
@@ -123,7 +123,7 @@ namespace mert_software_task.WebFormsUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(319, 265);
             this.Controls.Add(this.btnPullAndSaveData);
             this.Controls.Add(this.btnEmployess);
             this.Controls.Add(this.btnShippers);
@@ -133,6 +133,7 @@ namespace mert_software_task.WebFormsUI
             this.Controls.Add(this.btnProducts);
             this.Controls.Add(this.btnOrders);
             this.Name = "MainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);

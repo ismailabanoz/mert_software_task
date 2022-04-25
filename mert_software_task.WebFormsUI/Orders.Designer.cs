@@ -29,13 +29,13 @@ namespace mert_software_task.WebFormsUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgwOrders = new System.Windows.Forms.DataGridView();
             this.gbxAddOrder = new System.Windows.Forms.GroupBox();
+            this.tbxEmployeeAdd = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.tbxFreightAdd = new System.Windows.Forms.TextBox();
             this.tbxShipNameAdd = new System.Windows.Forms.TextBox();
             this.tbxShipViaAdd = new System.Windows.Forms.TextBox();
-            this.cbxEmployeeAdd = new System.Windows.Forms.ComboBox();
             this.cbxCustomerAdd = new System.Windows.Forms.ComboBox();
             this.dtpShippedDateAdd = new System.Windows.Forms.DateTimePicker();
             this.dtpRequiredDateAdd = new System.Windows.Forms.DateTimePicker();
@@ -49,11 +49,11 @@ namespace mert_software_task.WebFormsUI
             this.lblEmployeeAdd = new System.Windows.Forms.Label();
             this.lblCustomerAdd = new System.Windows.Forms.Label();
             this.gbxOrderUpdate = new System.Windows.Forms.GroupBox();
+            this.tbxEmployeeUpdate = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.tbxFreightUpdate = new System.Windows.Forms.TextBox();
             this.tbxShipNameUpdate = new System.Windows.Forms.TextBox();
             this.tbxShipViaUpdate = new System.Windows.Forms.TextBox();
-            this.cbxEmployeeUpdate = new System.Windows.Forms.ComboBox();
             this.cbxCustomerUpdate = new System.Windows.Forms.ComboBox();
             this.dtpShippedDateUpdate = new System.Windows.Forms.DateTimePicker();
             this.dtpRequiredDateUpdate = new System.Windows.Forms.DateTimePicker();
@@ -66,29 +66,30 @@ namespace mert_software_task.WebFormsUI
             this.lblOrderDateUpdate = new System.Windows.Forms.Label();
             this.lblEmployeeUpdate = new System.Windows.Forms.Label();
             this.lblCustomerUpdate = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnDelete = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwOrders)).BeginInit();
             this.gbxAddOrder.SuspendLayout();
             this.gbxOrderUpdate.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgwOrders
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 218);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1236, 203);
-            this.dataGridView1.TabIndex = 0;
+            this.dgwOrders.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgwOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwOrders.Location = new System.Drawing.Point(14, 218);
+            this.dgwOrders.Margin = new System.Windows.Forms.Padding(5);
+            this.dgwOrders.Name = "dgwOrders";
+            this.dgwOrders.Size = new System.Drawing.Size(1236, 203);
+            this.dgwOrders.TabIndex = 0;
+            this.dgwOrders.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwOrders_CellClick);
             // 
             // gbxAddOrder
             // 
+            this.gbxAddOrder.Controls.Add(this.tbxEmployeeAdd);
             this.gbxAddOrder.Controls.Add(this.btnAdd);
             this.gbxAddOrder.Controls.Add(this.tbxFreightAdd);
             this.gbxAddOrder.Controls.Add(this.tbxShipNameAdd);
             this.gbxAddOrder.Controls.Add(this.tbxShipViaAdd);
-            this.gbxAddOrder.Controls.Add(this.cbxEmployeeAdd);
             this.gbxAddOrder.Controls.Add(this.cbxCustomerAdd);
             this.gbxAddOrder.Controls.Add(this.dtpShippedDateAdd);
             this.gbxAddOrder.Controls.Add(this.dtpRequiredDateAdd);
@@ -110,6 +111,13 @@ namespace mert_software_task.WebFormsUI
             this.gbxAddOrder.TabStop = false;
             this.gbxAddOrder.Text = "Add Order";
             // 
+            // tbxEmployeeAdd
+            // 
+            this.tbxEmployeeAdd.Location = new System.Drawing.Point(114, 63);
+            this.tbxEmployeeAdd.Name = "tbxEmployeeAdd";
+            this.tbxEmployeeAdd.Size = new System.Drawing.Size(266, 31);
+            this.tbxEmployeeAdd.TabIndex = 17;
+            // 
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(14, 148);
@@ -118,6 +126,7 @@ namespace mert_software_task.WebFormsUI
             this.btnAdd.TabIndex = 16;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // tbxFreightAdd
             // 
@@ -139,14 +148,6 @@ namespace mert_software_task.WebFormsUI
             this.tbxShipViaAdd.Name = "tbxShipViaAdd";
             this.tbxShipViaAdd.Size = new System.Drawing.Size(266, 31);
             this.tbxShipViaAdd.TabIndex = 13;
-            // 
-            // cbxEmployeeAdd
-            // 
-            this.cbxEmployeeAdd.FormattingEnabled = true;
-            this.cbxEmployeeAdd.Location = new System.Drawing.Point(114, 63);
-            this.cbxEmployeeAdd.Name = "cbxEmployeeAdd";
-            this.cbxEmployeeAdd.Size = new System.Drawing.Size(266, 31);
-            this.cbxEmployeeAdd.TabIndex = 12;
             // 
             // cbxCustomerAdd
             // 
@@ -259,11 +260,11 @@ namespace mert_software_task.WebFormsUI
             // 
             // gbxOrderUpdate
             // 
+            this.gbxOrderUpdate.Controls.Add(this.tbxEmployeeUpdate);
             this.gbxOrderUpdate.Controls.Add(this.btnUpdate);
             this.gbxOrderUpdate.Controls.Add(this.tbxFreightUpdate);
             this.gbxOrderUpdate.Controls.Add(this.tbxShipNameUpdate);
             this.gbxOrderUpdate.Controls.Add(this.tbxShipViaUpdate);
-            this.gbxOrderUpdate.Controls.Add(this.cbxEmployeeUpdate);
             this.gbxOrderUpdate.Controls.Add(this.cbxCustomerUpdate);
             this.gbxOrderUpdate.Controls.Add(this.dtpShippedDateUpdate);
             this.gbxOrderUpdate.Controls.Add(this.dtpRequiredDateUpdate);
@@ -285,6 +286,13 @@ namespace mert_software_task.WebFormsUI
             this.gbxOrderUpdate.TabStop = false;
             this.gbxOrderUpdate.Text = "Update Order";
             // 
+            // tbxEmployeeUpdate
+            // 
+            this.tbxEmployeeUpdate.Location = new System.Drawing.Point(114, 63);
+            this.tbxEmployeeUpdate.Name = "tbxEmployeeUpdate";
+            this.tbxEmployeeUpdate.Size = new System.Drawing.Size(266, 31);
+            this.tbxEmployeeUpdate.TabIndex = 17;
+            // 
             // btnUpdate
             // 
             this.btnUpdate.Location = new System.Drawing.Point(14, 148);
@@ -293,6 +301,7 @@ namespace mert_software_task.WebFormsUI
             this.btnUpdate.TabIndex = 16;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // tbxFreightUpdate
             // 
@@ -314,14 +323,6 @@ namespace mert_software_task.WebFormsUI
             this.tbxShipViaUpdate.Name = "tbxShipViaUpdate";
             this.tbxShipViaUpdate.Size = new System.Drawing.Size(266, 31);
             this.tbxShipViaUpdate.TabIndex = 13;
-            // 
-            // cbxEmployeeUpdate
-            // 
-            this.cbxEmployeeUpdate.FormattingEnabled = true;
-            this.cbxEmployeeUpdate.Location = new System.Drawing.Point(114, 63);
-            this.cbxEmployeeUpdate.Name = "cbxEmployeeUpdate";
-            this.cbxEmployeeUpdate.Size = new System.Drawing.Size(266, 31);
-            this.cbxEmployeeUpdate.TabIndex = 12;
             // 
             // cbxCustomerUpdate
             // 
@@ -432,30 +433,32 @@ namespace mert_software_task.WebFormsUI
             this.lblCustomerUpdate.TabIndex = 0;
             this.lblCustomerUpdate.Text = "Customer";
             // 
-            // button3
+            // btnDelete
             // 
-            this.button3.Location = new System.Drawing.Point(14, 427);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 38);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(14, 427);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(114, 38);
+            this.btnDelete.TabIndex = 17;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // Orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.gbxOrderUpdate);
             this.Controls.Add(this.gbxAddOrder);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgwOrders);
             this.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Orders";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Orders";
             this.Load += new System.EventHandler(this.Orders_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwOrders)).EndInit();
             this.gbxAddOrder.ResumeLayout(false);
             this.gbxAddOrder.PerformLayout();
             this.gbxOrderUpdate.ResumeLayout(false);
@@ -466,13 +469,12 @@ namespace mert_software_task.WebFormsUI
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgwOrders;
         private System.Windows.Forms.GroupBox gbxAddOrder;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox tbxFreightAdd;
         private System.Windows.Forms.TextBox tbxShipNameAdd;
         private System.Windows.Forms.TextBox tbxShipViaAdd;
-        private System.Windows.Forms.ComboBox cbxEmployeeAdd;
         private System.Windows.Forms.ComboBox cbxCustomerAdd;
         private System.Windows.Forms.DateTimePicker dtpShippedDateAdd;
         private System.Windows.Forms.DateTimePicker dtpRequiredDateAdd;
@@ -490,8 +492,6 @@ namespace mert_software_task.WebFormsUI
         private System.Windows.Forms.TextBox tbxFreightUpdate;
         private System.Windows.Forms.TextBox tbxShipNameUpdate;
         private System.Windows.Forms.TextBox tbxShipViaUpdate;
-        private System.Windows.Forms.ComboBox cbxEmployeeUpdate;
-        private System.Windows.Forms.ComboBox cbxCustomerUpdate;
         private System.Windows.Forms.DateTimePicker dtpShippedDateUpdate;
         private System.Windows.Forms.DateTimePicker dtpRequiredDateUpdate;
         private System.Windows.Forms.DateTimePicker dtpOrderDateUpdate;
@@ -503,6 +503,9 @@ namespace mert_software_task.WebFormsUI
         private System.Windows.Forms.Label lblOrderDateUpdate;
         private System.Windows.Forms.Label lblEmployeeUpdate;
         private System.Windows.Forms.Label lblCustomerUpdate;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.TextBox tbxEmployeeAdd;
+        private System.Windows.Forms.TextBox tbxEmployeeUpdate;
+        private System.Windows.Forms.ComboBox cbxCustomerUpdate;
     }
 }

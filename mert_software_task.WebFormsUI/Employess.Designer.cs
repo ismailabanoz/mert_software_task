@@ -56,6 +56,8 @@ namespace mert_software_task.WebFormsUI
             this.tbxUnitPriceAdd = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.gbxAddProduct = new System.Windows.Forms.GroupBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -73,10 +75,8 @@ namespace mert_software_task.WebFormsUI
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.gbxAddProduct.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -338,6 +338,20 @@ namespace mert_software_task.WebFormsUI
             this.gbxAddProduct.TabStop = false;
             this.gbxAddProduct.Text = "Add Customer";
             // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(110, 26);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(250, 23);
+            this.textBox18.TabIndex = 23;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(110, 63);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(250, 23);
+            this.textBox15.TabIndex = 22;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.textBox4);
@@ -517,20 +531,6 @@ namespace mert_software_task.WebFormsUI
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Update Customer";
             // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(110, 63);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(250, 23);
-            this.textBox15.TabIndex = 22;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(150, 63);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(250, 23);
-            this.textBox16.TabIndex = 22;
-            // 
             // textBox17
             // 
             this.textBox17.Location = new System.Drawing.Point(150, 26);
@@ -538,12 +538,12 @@ namespace mert_software_task.WebFormsUI
             this.textBox17.Size = new System.Drawing.Size(250, 23);
             this.textBox17.TabIndex = 23;
             // 
-            // textBox18
+            // textBox16
             // 
-            this.textBox18.Location = new System.Drawing.Point(110, 26);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(250, 23);
-            this.textBox18.TabIndex = 23;
+            this.textBox16.Location = new System.Drawing.Point(150, 63);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(250, 23);
+            this.textBox16.TabIndex = 22;
             // 
             // Employess
             // 
@@ -555,8 +555,11 @@ namespace mert_software_task.WebFormsUI
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "Employess";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employess";
+            this.Load += new System.EventHandler(this.Employess_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.gbxAddProduct.ResumeLayout(false);

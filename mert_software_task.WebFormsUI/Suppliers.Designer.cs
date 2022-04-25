@@ -37,6 +37,7 @@ namespace mert_software_task.WebFormsUI
             this.tbxUnitPriceAdd = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.gbxAddProduct = new System.Windows.Forms.GroupBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -51,7 +52,6 @@ namespace mert_software_task.WebFormsUI
             this.lblQuantityPerUniteAdd = new System.Windows.Forms.Label();
             this.lblCategoryAdd = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox15 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -155,6 +155,13 @@ namespace mert_software_task.WebFormsUI
             this.gbxAddProduct.TabIndex = 27;
             this.gbxAddProduct.TabStop = false;
             this.gbxAddProduct.Text = "Add Supplier";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(150, 26);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(250, 31);
+            this.textBox15.TabIndex = 34;
             // 
             // groupBox1
             // 
@@ -293,13 +300,6 @@ namespace mert_software_task.WebFormsUI
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1236, 203);
             this.dataGridView1.TabIndex = 26;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(150, 26);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(250, 31);
-            this.textBox15.TabIndex = 34;
             // 
             // groupBox2
             // 
@@ -513,9 +513,11 @@ namespace mert_software_task.WebFormsUI
             this.Controls.Add(this.gbxAddProduct);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Suppliers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Suppliers";
+            this.Load += new System.EventHandler(this.Suppliers_Load);
             this.gbxAddProduct.ResumeLayout(false);
             this.gbxAddProduct.PerformLayout();
             this.groupBox1.ResumeLayout(false);
