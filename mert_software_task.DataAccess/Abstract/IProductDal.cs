@@ -1,4 +1,5 @@
-﻿using mert_software_task.Entities.Concrete;
+﻿using mert_software_task.Entities.ComplexTypes;
+using mert_software_task.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,5 +9,6 @@ namespace mert_software_task.DataAccess.Abstract
 {
     public interface IProductDal : IEntityRepository<Product>
     {
+        List<GetProducts> GetProducts();
     }
 }

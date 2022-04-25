@@ -1,4 +1,5 @@
-﻿using mert_software_task.Entities.Concrete;
+﻿using mert_software_task.Entities.ComplexTypes;
+using mert_software_task.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,6 @@ namespace mert_software_task.Business.Abstract
         void Update(Product archive);
         void Delete(Product archive);
         List<Product> SearchAll(string key);
+        List<GetProducts> GetProducts();
     }
 }

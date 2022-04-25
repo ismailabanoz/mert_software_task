@@ -52,7 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IEntity.cs" />
+    <Compile Include="ComplexTypes\GetCustomers.cs" />
+    <Compile Include="ComplexTypes\GetEmployess.cs" />
     <Compile Include="ComplexTypes\GetOrders.cs" />
+    <Compile Include="ComplexTypes\GetProducts.cs" />
+    <Compile Include="ComplexTypes\GetSuppliers.cs" />
     <Compile Include="Concrete\AddressOfCustomer.cs" />
     <Compile Include="Concrete\AddressOfEmployee.cs" />
     <Compile Include="Concrete\AddressOfSupplier.cs" />
